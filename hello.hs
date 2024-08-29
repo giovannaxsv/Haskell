@@ -1,3 +1,13 @@
+lista :: [Int]
+lista = [1,3,2,7,4,6,5]
+
+numerosImpares :: [Int]
+numerosImpares = filter odd lista
+
+somaTotal :: Int
+somaTotal = sum numerosImpares
+
 main = do
-  putStrLn "Hello, everybody!"
-  putStrLn ("Please look at my favorite odd numbers: " ++ show (filter odd [10..20]))
+    print lista
+    print numerosImpares
+    print somaTotal
